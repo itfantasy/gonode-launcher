@@ -137,10 +137,8 @@
             // 
             // ConfForm
             // 
-            this.AcceptButton = this.OKBtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.CancelBtn;
             this.ClientSize = new System.Drawing.Size(594, 470);
             this.Controls.Add(this.CancelBtn);
             this.Controls.Add(this.OKBtn);
