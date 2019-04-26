@@ -75,7 +75,7 @@
             this.toolStripSeparator3,
             this.EndMi});
             this.mainMenuStrip.Name = "mainMenuStrip";
-            this.mainMenuStrip.Size = new System.Drawing.Size(200, 232);
+            this.mainMenuStrip.Size = new System.Drawing.Size(200, 254);
             // 
             // AboutMi
             // 
@@ -137,7 +137,7 @@
             // 
             this.RestartMi.Name = "RestartMi";
             this.RestartMi.Size = new System.Drawing.Size(199, 22);
-            this.RestartMi.Text = "重启服务 (WIN + W)";
+            this.RestartMi.Text = "重启服务 (WIN + A)";
             this.RestartMi.Click += new System.EventHandler(this.RestartMi_Click);
             // 
             // toolStripSeparator2
@@ -149,7 +149,7 @@
             // 
             this.LogMi.Name = "LogMi";
             this.LogMi.Size = new System.Drawing.Size(199, 22);
-            this.LogMi.Text = "查看日志";
+            this.LogMi.Text = "查看日志 (WIN + Z)";
             this.LogMi.Click += new System.EventHandler(this.LogMi_Click);
             // 
             // toolStripSeparator3

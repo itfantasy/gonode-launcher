@@ -16,6 +16,7 @@ namespace itfantasy.gonode.toolkit
         int HK_STOP = 0;
         int HK_RESTART = 0;
         int HK_HIDESHOW = 0;
+        int HK_SHOWLOG = 0;
 
         public MainForm()
         {
@@ -46,8 +47,9 @@ namespace itfantasy.gonode.toolkit
             Hotkey hotkey = new Hotkey(this.Handle);
             HK_START = hotkey.RegisterHotkey(System.Windows.Forms.Keys.S, Hotkey.KeyFlags.MOD_WIN);
             HK_STOP = hotkey.RegisterHotkey(System.Windows.Forms.Keys.Q, Hotkey.KeyFlags.MOD_WIN);
-            HK_RESTART = hotkey.RegisterHotkey(System.Windows.Forms.Keys.W, Hotkey.KeyFlags.MOD_WIN);
+            HK_RESTART = hotkey.RegisterHotkey(System.Windows.Forms.Keys.A, Hotkey.KeyFlags.MOD_WIN);
             HK_HIDESHOW = hotkey.RegisterHotkey(System.Windows.Forms.Keys.X, Hotkey.KeyFlags.MOD_WIN);
+            HK_SHOWLOG = hotkey.RegisterHotkey(System.Windows.Forms.Keys.Z, Hotkey.KeyFlags.MOD_WIN);
             hotkey.OnHotkey += new HotkeyEventHandler(OnHotkey);
         }
 
@@ -68,6 +70,10 @@ namespace itfantasy.gonode.toolkit
             else if (HotkeyID == HK_HIDESHOW)
             {
                 this.OnHideOrShow();
+            }
+            else if(HotkeyID == HK_SHOWLOG)
+            {
+                this.OnShowLog();
             }
         }
 
@@ -211,6 +217,11 @@ namespace itfantasy.gonode.toolkit
         }
 
         private void LogMi_Click(object sender, EventArgs e)
+        {
+            this.OnShowLog();
+        }
+
+        private void OnShowLog()
         {
             List<FileInfo> logInfos = FileIOUtil.GetFileInfos(Conf.Logdir);
             string logs = "";
