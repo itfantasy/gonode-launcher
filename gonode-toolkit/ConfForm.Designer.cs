@@ -38,6 +38,7 @@
             this.AutoCb = new System.Windows.Forms.CheckBox();
             this.OKBtn = new System.Windows.Forms.Button();
             this.CancelBtn = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -135,11 +136,22 @@
             this.CancelBtn.UseVisualStyleBackColor = true;
             this.CancelBtn.Click += new System.EventHandler(this.CancelBtn_Click);
             // 
+            // label5
+            // 
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label5.Location = new System.Drawing.Point(18, 91);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(96, 34);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "多个程序路径请自行换行";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // ConfForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(594, 470);
+            this.ClientSize = new System.Drawing.Size(594, 453);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.CancelBtn);
             this.Controls.Add(this.OKBtn);
             this.Controls.Add(this.AutoCb);
@@ -173,5 +185,6 @@
         private System.Windows.Forms.CheckBox AutoCb;
         private System.Windows.Forms.Button OKBtn;
         private System.Windows.Forms.Button CancelBtn;
+        private System.Windows.Forms.Label label5;
     }
 }
