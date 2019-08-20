@@ -7,8 +7,8 @@
     <ProjectGuid>{39D426A1-035E-4189-AF6A-27104CAE4FFF}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>gonode_toolkit</RootNamespace>
-    <AssemblyName>gonode-toolkit</AssemblyName>
+    <RootNamespace>gonode_launcher</RootNamespace>
+    <AssemblyName>gonode-launcher</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

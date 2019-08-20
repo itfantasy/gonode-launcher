@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gonode-toolkit", "gonode-toolkit\gonode-toolkit.csproj", "{39D426A1-035E-4189-AF6A-27104CAE4FFF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gonode-launcher", "gonode-launcher\gonode-launcher.csproj", "{39D426A1-035E-4189-AF6A-27104CAE4FFF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
