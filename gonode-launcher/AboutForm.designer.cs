@@ -52,9 +52,9 @@
             this.label2.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label2.Location = new System.Drawing.Point(136, 47);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(359, 28);
+            this.label2.Size = new System.Drawing.Size(383, 28);
             this.label2.TabIndex = 2;
-            this.label2.Text = "gonode Toolkit for win Developers";
+            this.label2.Text = "gonode Launcher for win Developers";
             // 
             // label3
             // 
@@ -62,9 +62,9 @@
             this.label3.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label3.Location = new System.Drawing.Point(389, 125);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(151, 20);
+            this.label3.Size = new System.Drawing.Size(153, 20);
             this.label3.TabIndex = 3;
-            this.label3.Text = "kenkao_01@126.com";
+            this.label3.Text = "itfantasy@aliyun.com";
             // 
             // label1
             // 
@@ -74,7 +74,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 17);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Version 0.8.0.8";
+            this.label1.Text = "Version 1.0.1.0";
             // 
             // AboutForm
             // 
@@ -90,7 +90,7 @@
             this.MinimizeBox = false;
             this.Name = "AboutForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "关于 - gonode Toolkit";
+            this.Text = "关于 - gonode Launcher";
             this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

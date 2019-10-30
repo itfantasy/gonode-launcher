@@ -29,6 +29,7 @@ namespace itfantasy.gonode.toolkit
             this.Hide();
             this.ShowInTaskbar = false;
             this.notifyIcon.Visible = true;
+            this.notifyIcon.ShowBalloonTip(9999999, "gonode-launcher", "gonode-launcher已启动！\r\n重启服务：WIN + A \r\n查看日志：WIN + Z \r\n右击托盘查看更多功能\r\n…………", ToolTipIcon.Info);
 
             Conf.LoadConfig();
             this.notifyIcon.Text = Conf.Name;
@@ -86,9 +87,18 @@ namespace itfantasy.gonode.toolkit
                 if (ret == System.Windows.Forms.DialogResult.OK)
                 {
                     this.OnStop();
+                    this.OnBat();
                     this.OnStart();
                     MessageBox.Show("本地服务已重启完毕!", Conf.Name, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
+            }
+        }
+
+        private void OnBat()
+        {
+            if (Conf.Bat != "" && Conf.BatFileExists)
+            {
+                OS.ExeFile(Conf.BatFilePath, true);
             }
         }
 
@@ -158,6 +168,7 @@ namespace itfantasy.gonode.toolkit
             {
                 OS.KillProcessByPath(svc);
             }
+            this.OnBat();
             foreach (string svc in Conf.Services)
             {
                 OS.ExeFile(svc);

@@ -79,11 +79,15 @@ public class OS
         return false;
     }
 
-    public static bool ExeFile(string path)
+    public static bool ExeFile(string path, bool wait=false)
     {
         try
         {
-            System.Diagnostics.Process.Start(path);
+            Process proc = System.Diagnostics.Process.Start(path);
+            if (wait)
+            {
+                proc.WaitForExit();
+            }
             return true;
         }
         catch

@@ -54,6 +54,7 @@ namespace itfantasy.gonode.toolkit
         private void LoadConf()
         {
             this.NameTb.Text = Conf.Name;
+            this.ServiceTb.Text = "";
             foreach (string svc in Conf.Services)
             {
                 if (this.ServiceTb.Text != "")
@@ -64,6 +65,7 @@ namespace itfantasy.gonode.toolkit
             }
             this.LogDirTb.Text = Conf.Logdir;
             this.AutoCb.Checked = Conf.Auto;
+            this.BatTb.Text = Conf.Bat;
         }
 
         private void UpdateConf()
@@ -73,6 +75,7 @@ namespace itfantasy.gonode.toolkit
             Conf.Services = temp.Split('#');
             Conf.Logdir = this.LogDirTb.Text;
             Conf.Auto = this.AutoCb.Checked;
+            Conf.Bat = this.BatTb.Text;
             Conf.SaveConfig();
         }
     }
